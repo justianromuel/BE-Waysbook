@@ -1,0 +1,216 @@
+url: promo-books
+method: GET
+{
+  "status": "success",
+  "data": {
+    "promoBooks": [
+      {
+        "id": 1,
+        "title": "Sebuah Seni Bersikap Bodoh Amat",
+        "publicationDate": "12/12/2020",
+        "pages": 240,
+        "ISBN": 9786020391111,
+        "author": "Mark Manson",
+        "price": 59000,
+        "description": "Selama beberapa tahun belakangan...",
+        "bookAttachment": "sebuah-seni-bersikap-bodoh-amat.pdf",
+        "thumbnail": "sebuah-seni-bersikap-bodoh-amat.png"
+      }
+    ]
+  }
+}
+
+url: books
+method: GET
+{
+  "status": "success",
+  "data": {
+    "books": [
+      {
+        "id": 12,
+        "title": "My Own Private Mr.Cool",
+        "publicationDate": "12/12/2020",
+        "pages": 240,
+        "ISBN": 9786020395227,
+        "author": "Andre Putra",
+        "price": 75000,
+        "description": "Book description here",
+        "bookAttachment": "my-own-private.pdf",
+        "thumbnail": "my-own-private.png"
+      }
+    ]
+  }
+}
+
+url: login
+method: POST
+{
+  "status": "success",
+  "data": {
+    "user": {
+      "email": "andidoang@gmail.com",
+      "fullName": "andi",
+      "token": "0sdnOJIoinsdo9878IJNBIniiuinINiuYIUY"
+    }
+  }
+}
+
+url: register
+method: POST
+{
+  "email": "andidoang@gmail.com",
+  "password": "andidoang123",
+  "fullName": "andi"
+}
+
+url: book/:id
+method: GET
+{
+  "status": "success",
+  "data": {
+    "book": {
+      "id": 1,
+      "title": "Sebuah Seni Bersikap Bodoh Amat",
+      "publicationDate": "12/12/2020",
+      "pages": 240,
+      "ISBN": 9786020391111,
+      "writer": "Mark Manson",
+      "price": 59000,
+      "description": "Selama beberapa tahun belakangan...",
+      "bookAttachment": "sebuah-seni-bersikap-bodoh-amat.pdf",
+      "thumbnail": "sebuah-seni-bersikap-bodoh-amat.png"
+    }
+  }
+}
+
+url: profile
+method: GET
+{
+  "status": "success",
+  "data": {
+    "profile": {
+      "id": 1,
+      "fullName": "andre",
+      "email": "andre@gmail.com",
+      "gender": "male",
+      "phone": "0812-8623-8911",
+      "avatar": "image.png",
+      "purchasesBooks": [
+        {
+          "id": 1,
+          "title": "Sebuah Seni Bersikap Bodoh Amat",
+          "publicationDate": "12/12/2020",
+          "pages": 240,
+          "ISBN": 9786020391111,
+          "author": "Mark Manson",
+          "price": 59000,
+          "description": "Selama beberapa tahun belakangan...",
+          "bookAttachment": "sebuah-seni-bersikap-bodoh-amat.pdf",
+          "thumbnail": "sebuah-seni-bersikap-bodoh-amat.png"
+        }
+      ]
+    }
+  }
+}
+
+url: transaction
+method: POST
+{
+  "status": "success",
+  "data": {
+    "transcation": {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "fullName": "andre",
+        "email": "andre@gmail.com",
+        "gender": "male"
+      },
+      "attachment": "bca.png",
+      "booksPurchased": [
+        {
+          "id": 1,
+          "title": "Sebuah Seni Bersikap Bodoh Amat",
+          "publicationDate": "12/12/2020",
+          "pages": 240,
+          "ISBN": 9786020391111,
+          "author": "Mark Manson",
+          "price": 59000,
+          "description": "Selama beberapa tahun belakangan...",
+          "bookAttachment": "sebuah-seni-bersikap-bodoh-amat.pdf",
+          "thumbnail": "sebuah-seni-bersikap-bodoh-amat.png"
+        },
+        {
+          "id": 2,
+          "title": "Warm Hearth",
+          "publicationDate": "12/12/2020",
+          "pages": 220,
+          "ISBN": 9786020395227,
+          "author": "Valeria Patkar",
+          "price": 49000,
+          "description": "Dua insan manusia harus terjebak dalam...",
+          "bookAttachment": "warm-hearth.pdf",
+          "thumbnail": "warm-hearth.png"
+        }
+      ],
+    "totalPayment": 108000,
+    "status": "Pending"
+    }
+  }
+}
+
+url: transactions
+method: GET
+{
+  "status": "success",
+  "data": {
+    "transcations": [
+      {
+        "id": 1,
+        "user": {
+          "id": 1,
+          "fullName": "andre",
+          "email": "andre@gmail.com",
+          "gender": "male"
+        },
+        "attachment": "bca.png",
+        "booksPurcahased": [
+          {
+            "id": 1,
+            "title": "Sebuah Seni Bersikap Bodoh Amat",
+            "publicationDate": "12/12/2020",
+            "pages": 240,
+            "ISBN": 9786020391111,
+            "author": "Mark Manson",
+            "price": 59000,
+            "description": "Selama beberapa tahun belakangan...",
+            "bookAttachment": "sebuah-seni-bersikap-bodoh-amat.pdf",
+            "thumbnail": "sebuah-seni-bersikap-bodoh-amat.png"
+          }
+        ],
+        "totalPayment": 108000,
+        "status": "Pending"
+      }
+    ]
+  }
+}
+
+url: book
+method: POST
+{
+  "status": "success",
+  "data": {
+    "book": {
+      "id": 1,
+      "title": "Sebuah Seni Bersikap Bodoh Amat",
+      "publicationDate": "12/12/2020",
+      "pages": 240,
+      "ISBN": 9786020391111,
+      "author": "Mark Manson",
+      "price": 59000,
+      "description": "Selama beberapa tahun belakangan...",
+      "bookAttachment": "sebuah-seni-bersikap-bodoh-amat.pdf",
+      "thumbnail": "sebuah-seni-bersikap-bodoh-amat.png"
+    }
+  }
+}
